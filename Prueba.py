@@ -22,10 +22,6 @@ radio_button = driver.find_element_by_id("red")
 if not radio_button.is_selected():
     radio_button.click()
 
-text_area = driver.find_element_by_css_selector("textarea[placeholder='Tell us some fun stuff!']")
-text_area.send_keys("Ejemplo Texto")
-
-
 submit_button = driver.find_element(By.XPATH, "//input[@type='submit']")
 submit_button.click()
 
